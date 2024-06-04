@@ -1,101 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Montserrat:wght@400;500;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Montserrat:wght@400;500;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #232946;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.fakeimg2 {
+  background-color: none;
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg3 {
+  background-color: none;
+  height:50%;
+  width: 50%;
+  padding: 20px;
+}
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  
+    border-top: 3px  solid var(--primary);
+    color:var(--base-100);
+    font-size:25px;
+    padding:30px;
+
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+</style>
 </head>
 <body>
-    <header>
-        <nav id="navbar">
 
-            <ul class="nav-links">
-                <li><a href="#welcome-section" class="nav-links">Welcome</a></li>
-                <li><a href="#projects" class="nav-links">Projects</a></li>
-                <li><a href="#contact" class="nav-links">Contact</a></li>
+<div class="header">
+  <h2>Race,Ethnicity, and Culture with Saiid Koroma</h2>
+</div>
 
-
-            </ul>
-        </nav>
-
-
-        
-    </header>
-    <section id="welcome-section">
-     <h1>Hello I'm Saiid</h1>
-     <p>A Front End Developer</p>
-    </section>
-    <section id="projects">
-        <h1>These are some of my projects!</h1>
-        <div class="projects">
-        <a href="#" class="project-tile">
-            <img src="./port.png" alt="">
-            <p><span>&lt;</span>Pablo Picasso painting in Html<span>/&gt;</span></p>
-        </a>
-        <a href="#" class="project-tile">
-            <img src="./sheet.png" alt="">
-            <p><span>&lt;</span>Balance Sheet in Html<span>/&gt;</span></p>
-        </a>
-        <a href="#" class="project-tile">
-            <img src="./quiz.png" alt="">
-            <p><span>&lt;</span>Quiz Page in Html<span>/&gt;</span></p>
-        </a>
-        <a href="#" class="project-tile">
-            <img src="./kitt kat.png" alt="">
-            <p><span>&lt;</span>Cat Collage in html<span>/&gt;</span></p>
-        </a>
-        <a href="#" class="project-tile">
-            <img src="./piano.png" alt="">
-            <p><span>&lt;</span>Piano Created using Flexbox and Html<span>/&gt;</span></p>
-        </a>
-        <a href="#" class="project-tile">
-            <img src="./label.png" alt="">
-            <p><span>&lt;</span>Nutrition label<span>/&gt;</span></p>
-        </a>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Race and Intersectionality</h2>
+      <h5>How Race and Intersectionality can affect an individual, June 2, 2024</h5>
+      <img src="./inter.jpg" class="fakeimg3"   alt="">
+      
+      <p><a href="https://ywcaspokane.org/intersectionality/" target="_blank" rel="noopener noreferrer">Image Source</a></p>
+      <p>Hey Everyone, Welcome to my Blog! Let's explore the concept of intersectionality and why it's important. For the last few centuries, Men
+        have dominated most societies creating patriarchal societies throughout the world. While this generally benefits a percentage of men, others (specifically marginalized groups) do not receive the same benefits as others. The most common example of this would be LGBTQIA+ men, who are often discriminated against because of their affiliation with queer and transgender communities. Additionally, they are also neglected by society as a whole. An example would be the act of gay marriage, as until a decade or two ago was not legalized and was condemned . Can you think of different ways in which intersectionality affects others and perhaps yourself? Thanks for reading, stay tuned for the next blog post!
+</p>
     </div>
-    <a href="" class="show-all">
-        Show All <i class= "ri-arrow-drop-right-line"></i>
-    </a>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="./pic.jpg" class="fakeimg2"  alt="">
+      <p>Penn State Brandywine Senior writing a blog who writes blogs about Race, Ethnicity  and Culture!</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
 
+<div class="footer">
+  <h2>Created By Saiid Koroma</h2>
+</div>
 
-
-
-    </section>
-    <section id="contact">
-        <h1>Let's work together...</h1>
-        <p class="coffee-question">How do you take your coffee?</p>
-        <div class="social-medias">
-            <a href="" class="social-media">
-                <i class="ri-facebook-box-fill ri 2x"></i>
-                <p>Facebook</p></a>
-                <a href="https://github.com/Lattori"
-                target="_blank"
-                id="profile-link" class="social-media">
-                <i class="ri-github-fill ri 2x"></i>
-                <p>GitHub</p> </a>
-                <a href="https://www.freecodecamp.org/Lattori"
-                target="_blank" class="social-media">
-                <i class="ri-fire-fill ri 2x"></i>
-                <p>FreeCodeCamp</p> </a>
-                <a href="" class="social-media">
-                <i class="ri-at-line  ri-2x"></i>
-                <p>Send a Mail</p></a>
-                <a href="" class="social-media">
-                <i class="ri-cellphone-fill ri 2x"></i>
-                <p>Call Me</p></a>
-            </a>
-
-        </div>
-
-
-
-    </section>
-    <footer>Created By Saiid Koroma June 2023</footer>
 </body>
 </html>
